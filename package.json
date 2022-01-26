@@ -1,0 +1,23 @@
+{
+  "name": "cypress-cucumber-test",
+  "version": "1.0.1",
+  "description": "Libreria de automation para la plataforma web de reburn desarrollada por Trick Gaming Studio LLC",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "CYPRESS_TAGS='' cypress run",
+    "windows-set" : "set CYPRESS_TAGS=''",
+    "test-windows": "npm run windows-set && cypress run"
+  },
+  "keywords": [
+    "testcafe",
+    "bdd",
+    "cucumber"
+  ],
+  "author": "Gaston Alejandro Genaud",
+  "license": "SEE IN LICENSE",
+  "devDependencies": {
+    "cypress": "^7.0.1",
+    "cypress-cucumber-preprocessor": "^4.0.3",
+    "cypress-xpath": "^1.6.2"
+  }
+}
