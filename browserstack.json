@@ -1,0 +1,21 @@
+{
+    "auth": {
+        "username": "gastongenaud_VFmAES",
+        "access_key": "8fQcpMszsxZdqy6Eh1Us"
+      },
+
+      "run_settings": {
+        "cypress_config_file": "./cypress.json",
+        "cypress_version": "7.0.1",
+        "project_name": "MT Reborn",
+        "build_name": "Build no. 1",
+        "parallels": "5"
+    },
+
+    "browsers": [{
+        "os": "OS X Catalina",
+        "browser": "chrome",
+        "versions": ["latest", "latest-1", "latest-2", "latest-beta"]
+      }
+    ]
+}

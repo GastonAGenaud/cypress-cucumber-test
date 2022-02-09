@@ -17,7 +17,14 @@ When('I type on username field {string}', (text) => {
   cy.get('#username').as('input').click();
   cy.get('#username').type(text);
 });
-
-When('I click button {string}', (value) => {
+function signUp(){
   cy.get('.btn').contains(value).click();
+}
+When('I click button {string}', (value) => {
+    if (value="Sign up") {
+      signUp();
+    }
+    else{
+      cy.get('#welcome > div > div > div > div').find('a > div > div > p').contains(value).click();
+    }
 });
